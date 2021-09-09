@@ -15,3 +15,5 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
+
+//  force: true  == allows the table to be overwritten and re-created. 
